@@ -1,0 +1,23 @@
+{% assign state = site.conference.state %}
+<nav class="site-nav">
+  <ul>
+    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+
+    {% if state == "active" %}
+      <li><a href="{{ '/program/' | relative_url }}">Program</a></li>
+      <li><a href="{{ '/venue/' | relative_url }}">Venue</a></li>
+      <li><a href="{{ '/hotel/' | relative_url }}">Hotel</a></li>
+      <li><a href="{{ '/registration/' | relative_url }}">Registration</a></li>
+      <li><a href="{{ '/administrative/' | relative_url }}">Administrative</a></li>
+    {% endif %}
+
+    <li class="has-dropdown">
+      <a href="{{ '/past/' | relative_url }}" aria-haspopup="true">Past &#9662;</a>
+      <ul class="dropdown">
+        {% for year in site.past_years %}
+          <li><a href="{{ '/past/' | append: year | append: '/' | relative_url }}">{{ year }}</a></li>
+        {% endfor %}
+      </ul>
+    </li>
+  </ul>
+</nav>

@@ -41,7 +41,7 @@ title: Home
 
 <p>The schedule will include roughly {{ c.num_talks }} talks. There will also be ample time for informal discussions among the participants. We request that all participants attend the entire three days of the conference.</p>
 
-<p>{{ c.organizers_short }} are the program organizers for this year's conference. We welcome papers in a variety of areas. Examples of topics of interest include:</p>
+<p>We welcome papers in a variety of areas. Examples of topics of interest include:</p>
 
 {% include topics.html %}
 
@@ -65,8 +65,6 @@ title: Home
 
 <p>The schedule will include roughly {{ c.num_talks }} talks. There will also be ample time for informal discussions among the participants. We request that all participants attend the entire three days of the conference.</p>
 
-<p>{{ c.organizers_short }} are the program organizers for this year's conference.</p>
-
 {% elsif c.state == "active" %}
 
 # MN Macro {{ c.year }}
@@ -74,8 +72,6 @@ title: Home
 <p>The Minnesota Workshop in Macroeconomic Theory is a workshop on dynamic macroeconomic theory sponsored by the University of Minnesota and the Federal Reserve Bank of Minneapolis. It is held on the campus of the University of Minnesota.</p>
 
 <p>The {{ c.year }} conference will last for three days, from {{ c.dates_long }}.</p>
-
-<p>{{ c.organizers_long }} are the program organizers for this year's conference.</p>
 
 <p class="callout"><a href="{{ '/program/' | relative_url }}"><strong>MN Macro {{ c.year }} Program</strong></a></p>
 
@@ -86,3 +82,17 @@ title: Home
 <p><a href="{{ '/hotel/' | relative_url }}">Reserve your room before {{ c.hotel_deadline }}</a>.</p>
 
 {% endif %}
+
+## {{ site.conference.year }} Program Organizers
+
+<ul class="organizer-list">
+  <li><strong>Alessandra Fogli</strong> — Federal Reserve Bank of Minneapolis</li>
+  <li><strong>Pablo Kurlat</strong> — University of Southern California</li>
+</ul>
+
+## Permanent Organizers
+
+<ul class="organizer-list">
+  <li><strong>Manuel Amador</strong> — Federal Reserve Bank of Minneapolis and University of Minnesota</li>
+  <li><strong>Cristina Arellano</strong> — Federal Reserve Bank of Minneapolis</li>
+</ul>

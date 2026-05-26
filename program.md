@@ -8,6 +8,13 @@ permalink: /program/
 
 <p class="program-dates">July 29 – 31, 2026</p>
 
+<h2>{{ site.conference.year }} Program Organizers</h2>
+
+<ul class="organizer-list">
+  <li><strong>Alessandra Fogli</strong> — Federal Reserve Bank of Minneapolis</li>
+  <li><strong>Pablo Kurlat</strong> — University of Southern California</li>
+</ul>
+
 <p>The conference will take place on the first floor of <a href="https://campusmaps.umn.edu/herbert-m-hanson-jr-hall">Hanson Hall</a> on the West Bank of the University of Minnesota's Twin Cities campus.</p>
 
 <section class="day-section">

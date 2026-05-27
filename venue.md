@@ -17,3 +17,5 @@ permalink: /venue/
 <h2>Getting there</h2>
 
 <p>The Metro Transit light rail offers easy access between the Minneapolis–St. Paul airport, downtown hotels, and the University of Minnesota. The standard adult fare is $2.00. More information is available at <a href="https://www.metrotransit.org/fares">www.metrotransit.org/fares</a>.</p>
+
+<p>Uber and Lyft are also widely available throughout the Twin Cities.</p>

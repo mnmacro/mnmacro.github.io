@@ -12,12 +12,14 @@
   </text>
 
   <!-- Conference title -->
-  <text x="600" y="350"
-        font-family="Georgia, 'Times New Roman', serif"
-        font-size="44" font-weight="700"
-        fill="#FFFFFF" text-anchor="middle">
-    Minnesota Workshop in Macroeconomic Theory
-  </text>
+  <text x="600" y="345"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="56" font-weight="700" letter-spacing="-0.01em"
+        text-anchor="middle"><tspan fill="#FFCC33">Minnesota</tspan><tspan fill="#FFFFFF"> Workshop</tspan></text>
+  <text x="600" y="415"
+        font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif"
+        font-size="56" font-weight="700" letter-spacing="-0.01em"
+        text-anchor="middle"><tspan fill="#FFFFFF">in </tspan><tspan fill="#FFCC33">Macro</tspan><tspan fill="#FFFFFF">economic Theory</tspan></text>
 
   <!-- Bottom gold band -->
   <rect y="623" width="1200" height="7" fill="#FFCC33"/>

@@ -3,8 +3,33 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{{ site.description }}">
+  {%- if page.title and page.title != "Home" -%}
+    {%- assign full_title = page.title | append: " — " | append: site.title -%}
+  {%- else -%}
+    {%- assign full_title = site.title -%}
+  {%- endif -%}
+  {%- assign page_desc = page.description | default: site.description -%}
+  {%- assign abs_url = site.url | append: page.url -%}
+  {%- assign og_image = site.url | append: '/og-image.svg' -%}
+  <title>{{ full_title }}</title>
+  <meta name="description" content="{{ page_desc | xml_escape }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{{ full_title | xml_escape }}">
+  <meta property="og:description" content="{{ page_desc | xml_escape }}">
+  <meta property="og:url" content="{{ abs_url }}">
+  <meta property="og:site_name" content="{{ site.title | xml_escape }}">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="{{ og_image }}">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ full_title | xml_escape }}">
+  <meta name="twitter:description" content="{{ page_desc | xml_escape }}">
+  <meta name="twitter:image" content="{{ og_image }}">
+
   <link rel="icon" type="image/svg+xml" href="{{ '/favicon.svg' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>

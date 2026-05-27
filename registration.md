@@ -14,7 +14,7 @@ permalink: /registration/
     <p class="dates">For researchers and presenters</p>
   </a>
   <a class="past-card" href="https://docs.google.com/forms/d/e/1FAIpQLSeOkDxbo-02h3OvKCtgpCu7vivYZ1vU8N0DtdziJ5k9RpFnyQ/viewform?usp=publish-editor">
-    <h2>UMN student registration</h2>
+    <h2>UMN students</h2>
     <p class="dates">For University of Minnesota students</p>
   </a>
 </div>

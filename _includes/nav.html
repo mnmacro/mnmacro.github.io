@@ -11,13 +11,6 @@
       <li><a href="{{ '/administrative/' | relative_url }}">Administrative</a></li>
     {% endif %}
 
-    <li class="has-dropdown">
-      <a href="{{ '/past/' | relative_url }}" aria-haspopup="true">Past &#9662;</a>
-      <ul class="dropdown">
-        {% for year in site.past_years %}
-          <li><a href="{{ '/past/' | append: year | append: '/' | relative_url }}">{{ year }}</a></li>
-        {% endfor %}
-      </ul>
-    </li>
+    <li><a href="{{ '/past/' | relative_url }}">Past</a></li>
   </ul>
 </nav>

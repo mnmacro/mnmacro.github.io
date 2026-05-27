@@ -73,7 +73,12 @@ title: Home
 
 <p>The {{ c.year }} conference will last for three days, from {{ c.dates_long }}.</p>
 
-<p class="callout"><a href="{{ '/program/' | relative_url }}"><strong>Minnesota Macro {{ c.year }} Program</strong></a></p>
+<div class="program-card-wrap">
+  <a class="past-card program-card" href="{{ '/program/' | relative_url }}">
+    <h2>Minnesota Macro {{ c.year }} Program</h2>
+    <p class="dates">{{ c.dates_short }}</p>
+  </a>
+</div>
 
 <p>The conference will take place on the {{ c.venue_html }}.</p>
 

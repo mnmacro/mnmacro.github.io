@@ -25,8 +25,6 @@ permalink: /about/
 
 {% include topics.html %}
 
-<p>Submissions in other areas are equally welcome; the final program reflects the interests of the participants in any given year.</p>
-
-<p>While the title of the workshop includes "Theory," empirical work guided by theory has long been a substantial part of the conference.</p>
+<p>Submissions in other areas are equally welcome. While the title of the workshop includes "Theory," empirical work guided by theory has long been a substantial part of the conference.</p>
 
 <p class="image-credit">Photo of Nancy Stokey: University of Chicago Photographic Archive, apf1-13110, Hanna Holborn Gray Special Collections Research Center, University of Chicago Library.</p>

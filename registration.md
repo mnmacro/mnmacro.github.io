@@ -10,8 +10,8 @@ permalink: /registration/
 
 <div class="past-cards action-cards">
   <a class="past-card" href="https://docs.google.com/forms/d/e/1FAIpQLSfcdt1tpqM8qQOZ1KqLMLNmRpsjz68otAzHae0qpnvclq-Isw/viewform?usp=publish-editor">
-    <h2>General registration</h2>
-    <p class="dates">Open to all attendees</p>
+    <h2>Registration for economists</h2>
+    <p class="dates">Researchers and presenters</p>
   </a>
   <a class="past-card" href="https://docs.google.com/forms/d/e/1FAIpQLSeOkDxbo-02h3OvKCtgpCu7vivYZ1vU8N0DtdziJ5k9RpFnyQ/viewform?usp=publish-editor">
     <h2>UMN student registration</h2>

@@ -27,7 +27,7 @@ title: Home
 
 {% elsif c.state == "cfp" %}
 
-# MN Macro {{ c.year }}
+# Minnesota Macro {{ c.year }}
 
 <p>The Minnesota Workshop in Macroeconomic Theory is a workshop on dynamic macroeconomic theory sponsored by the University of Minnesota and the Federal Reserve Bank of Minneapolis. It is held on the campus of the University of Minnesota.</p>
 
@@ -51,7 +51,7 @@ title: Home
 
 {% elsif c.state == "deadline_passed" %}
 
-# MN Macro {{ c.year }}
+# Minnesota Macro {{ c.year }}
 
 <p>The Minnesota Workshop in Macroeconomic Theory is a workshop on dynamic macroeconomic theory sponsored by the University of Minnesota and the Federal Reserve Bank of Minneapolis. It is held on the campus of the University of Minnesota.</p>
 
@@ -67,13 +67,13 @@ title: Home
 
 {% elsif c.state == "active" %}
 
-# MN Macro {{ c.year }}
+# Minnesota Macro {{ c.year }}
 
 <p>The Minnesota Workshop in Macroeconomic Theory is a workshop on dynamic macroeconomic theory sponsored by the University of Minnesota and the Federal Reserve Bank of Minneapolis. It is held on the campus of the University of Minnesota.</p>
 
 <p>The {{ c.year }} conference will last for three days, from {{ c.dates_long }}.</p>
 
-<p class="callout"><a href="{{ '/program/' | relative_url }}"><strong>MN Macro {{ c.year }} Program</strong></a></p>
+<p class="callout"><a href="{{ '/program/' | relative_url }}"><strong>Minnesota Macro {{ c.year }} Program</strong></a></p>
 
 <p>The conference will take place on the {{ c.venue_html }}.</p>
 

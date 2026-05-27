@@ -56,7 +56,9 @@ a:hover { text-decoration: underline; }
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 1.25rem;
+  flex-wrap: wrap;
+  column-gap: 1.25rem;
+  row-gap: 0.4rem;
 }
 
 .site-nav a {
@@ -326,6 +328,9 @@ table.schedule .conference-ends {
 
 @media (max-width: 600px) {
   .site-header .container { flex-direction: column; align-items: flex-start; }
+  .site-nav { width: 100%; }
+  .site-nav ul { column-gap: 1rem; }
+  .site-nav a { font-size: 0.9rem; }
   .site-nav .dropdown { right: auto; left: 0; }
   h1 { font-size: 1.6rem; }
 }

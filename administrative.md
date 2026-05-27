@@ -19,13 +19,7 @@ permalink: /administrative/
 <ol>
   <li>On your device, navigate to the area where you can view all Wi-Fi networks that are in range.</li>
   <li>Select <strong>eduroam</strong> from the list of available networks.</li>
-  <li>If your home institution participates in eduroam, you may log in with your home institution credentials.</li>
-  <li>Your device will now prompt you to log in to the network. Use the following credentials:
-    <ul>
-      <li>Username: <code>«ID»@umn.edu</code></li>
-      <li>Password: <code>«Password»</code></li>
-    </ul>
-  </li>
+  <li>If your home institution participates in eduroam, log in with your home institution credentials.</li>
 </ol>
 
 ## Wi-Fi access — connecting to UofM-Guest

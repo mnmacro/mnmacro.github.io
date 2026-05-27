@@ -6,8 +6,14 @@ permalink: /past/
 
 # Past Conferences
 
-<ul class="past-index">
+<div class="past-cards">
 {% for year in site.past_years %}
-  <li><a href="{{ '/past/' | append: year | append: '/' | relative_url }}">MN Macro {{ year }}</a></li>
+  {% assign permalink = '/past/' | append: year | append: '/' %}
+  {% assign p = site.pages | where: "permalink", permalink | first %}
+  <a class="past-card" href="{{ permalink | relative_url }}">
+    <h2>MN Macro {{ year }}</h2>
+    {% if p.dates %}<p class="dates">{{ p.dates }}</p>{% endif %}
+    {% if p.organizers %}<p class="organizers">{{ p.organizers }}</p>{% endif %}
+  </a>
 {% endfor %}
-</ul>
+</div>

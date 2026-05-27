@@ -1,10 +1,13 @@
 :root {
   --maroon: #7a0019;
+  --maroon-soft: #9b1b3a;
   --gold: #ffcc33;
   --ink: #1a1a1a;
   --muted: #555;
   --rule: #e2e2e2;
   --bg: #ffffff;
+  --font-body: ui-serif, "Source Serif 4", "Source Serif Pro", "Charter", Charter, Georgia, "Times New Roman", serif;
+  --font-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -12,10 +15,12 @@
 html, body {
   margin: 0;
   padding: 0;
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: var(--font-body);
   color: var(--ink);
   background: var(--bg);
-  line-height: 1.6;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 .container {
@@ -29,10 +34,13 @@ a:hover { text-decoration: underline; }
 
 /* Header */
 .site-header {
-  background: var(--maroon);
-  color: #fff;
-  padding: 1rem 0;
-  border-bottom: 4px solid var(--gold);
+  background: #fff;
+  color: var(--ink);
+  padding: 0.75rem 0;
+  border-bottom: 3px solid var(--gold);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .site-header .container {
@@ -44,9 +52,11 @@ a:hover { text-decoration: underline; }
 }
 
 .site-title {
-  color: #fff;
-  font-size: 1.25rem;
-  font-weight: bold;
+  color: var(--maroon);
+  font-family: var(--font-sans);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
   text-decoration: none;
 }
 
@@ -62,10 +72,12 @@ a:hover { text-decoration: underline; }
 }
 
 .site-nav a {
-  color: #fff;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--maroon);
+  font-family: var(--font-sans);
   font-size: 0.95rem;
 }
+
+.site-nav a:hover { text-decoration: underline; }
 
 .site-nav .has-dropdown { position: relative; }
 
@@ -181,7 +193,7 @@ ul li { margin-bottom: 0.35rem; }
 
 .back-link {
   margin-top: 2.5rem;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.9rem;
 }
 
@@ -197,28 +209,60 @@ ul.topics-list li { break-inside: avoid; }
   ul.topics-list { columns: 1; }
 }
 
-/* Past index list */
-ul.past-index {
-  list-style: none;
-  padding: 0;
-  columns: 2;
-  column-gap: 2rem;
-}
-ul.past-index li {
-  margin-bottom: 0.4rem;
-  break-inside: avoid;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+/* Past conferences index — card grid */
+.past-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
 }
 
-@media (max-width: 600px) {
-  ul.past-index { columns: 1; }
+.past-card {
+  display: block;
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  text-decoration: none;
+  transition: border-color 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.past-card:hover {
+  border-color: var(--maroon);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  text-decoration: none;
+}
+
+.past-card h2 {
+  margin: 0 0 0.35rem 0;
+  padding: 0;
+  border: 0;
+  color: var(--maroon);
+  font-size: 1.2rem;
+}
+
+.past-card .dates {
+  font-style: italic;
+  color: var(--muted);
+  margin: 0.15rem 0;
+  font-size: 0.9rem;
+  font-family: var(--font-sans);
+}
+
+.past-card .organizers {
+  margin: 0.35rem 0 0 0;
+  font-size: 0.9rem;
+  color: var(--ink);
+  line-height: 1.4;
 }
 
 /* Admin settings table */
 table.settings-table {
   border-collapse: collapse;
   margin: 1rem 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-sans);
   font-size: 0.92rem;
 }
 table.settings-table th,
@@ -258,14 +302,14 @@ table.settings-table th {
   font-size: 1.15rem;
   font-weight: 500;
   border: 0;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-sans);
 }
 
 table.schedule {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.95rem;
-  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-family: var(--font-sans);
 }
 
 table.schedule th {
@@ -333,4 +377,22 @@ table.schedule .conference-ends {
   .site-nav a { font-size: 0.9rem; }
   .site-nav .dropdown { right: auto; left: 0; }
   h1 { font-size: 1.6rem; }
+}
+
+/* Print */
+@media print {
+  .site-header, .site-footer, .back-link { display: none; }
+  body { color: #000; background: #fff; font-size: 11pt; line-height: 1.4; }
+  .container { max-width: 100%; padding: 0; }
+  main.container { padding: 0; }
+  h1, h2, h3 { color: #000; page-break-after: avoid; }
+  h2 { border-bottom: 1px solid #000; }
+  .day-section { border: 0; border-radius: 0; margin: 1rem 0; page-break-inside: avoid; }
+  .day-header { background: transparent !important; color: #000 !important; border-bottom: 1px solid #000; padding: 0.5rem 0; }
+  table.schedule th { background: transparent; color: #000; }
+  table.schedule .event-title a { color: #000; }
+  .callout { background: transparent; border-left: 2px solid #000; }
+  a { color: #000; text-decoration: none; }
+  a[href^="http"]:after { content: " (" attr(href) ")"; font-size: 0.85em; word-break: break-all; }
+  .past-card { box-shadow: none !important; border-color: #000 !important; transform: none !important; }
 }

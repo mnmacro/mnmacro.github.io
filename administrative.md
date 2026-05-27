@@ -10,7 +10,7 @@ permalink: /administrative/
 
 <p><strong>Restrooms:</strong> Restrooms are located across from the elevators on the first floor of Hanson Hall.</p>
 
-<p><strong>Minneapolis–St. Paul Light Rail:</strong> The Light Rail offers easy access to and from the airport, hotel, and the University of Minnesota. The fare is $2.50 during rush hour and $2.00 off-peak. More information is available at <a href="https://www.metrotransit.org/metro-system">www.metrotransit.org/metro-system</a>.</p>
+<p><strong>Minneapolis–St. Paul Light Rail:</strong> The Light Rail offers easy access to and from the airport, hotel, and the University of Minnesota. The standard adult fare is $2.00. More information is available at <a href="https://www.metrotransit.org/fares">www.metrotransit.org/fares</a>.</p>
 
 <p><strong>Please wear your nametag!</strong> Your nametag allows you to be identified by staff as a participant of the conference. This is particularly important at the dinner and for the staff who will be giving out lunches.</p>
 

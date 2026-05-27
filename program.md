@@ -84,8 +84,8 @@ permalink: /program/
         <td></td>
       </tr>
       <tr>
-        <td class="time-col">5:30 PM</td>
-        <td>Reception</td>
+        <td class="time-col">6:00 PM</td>
+        <td>Dinner at the <a href="https://wam.umn.edu/">Weisman Art Museum</a></td>
         <td></td>
       </tr>
     </tbody>

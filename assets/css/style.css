@@ -34,10 +34,10 @@ a:hover { text-decoration: underline; }
 
 /* Header */
 .site-header {
-  background: var(--maroon);
-  color: #fff;
+  background: #fff;
+  color: var(--ink);
   padding: 1rem 0;
-  border-bottom: 4px solid var(--gold);
+  border-bottom: 3px solid var(--gold);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -52,7 +52,7 @@ a:hover { text-decoration: underline; }
 }
 
 .site-title {
-  color: #fff;
+  color: var(--maroon);
   font-family: var(--font-sans);
   font-size: 1.6rem;
   font-weight: 700;
@@ -73,7 +73,7 @@ a:hover { text-decoration: underline; }
 }
 
 .site-nav a {
-  color: #fff;
+  color: var(--maroon);
   font-family: var(--font-sans);
   font-size: 0.95rem;
 }

@@ -73,18 +73,24 @@ title: Home
 
 <p>The {{ c.year }} conference will last for three days, from {{ c.dates_long }}.</p>
 
-<div class="program-card-wrap">
-  <a class="past-card program-card" href="{{ '/program/' | relative_url }}">
-    <h2>Minnesota Macro {{ c.year }} Program</h2>
+<div class="past-cards action-cards">
+  <a class="past-card" href="{{ '/program/' | relative_url }}">
+    <h2>Program</h2>
     <p class="dates">{{ c.dates_short }}</p>
+  </a>
+  <a class="past-card" href="{{ '/registration/' | relative_url }}">
+    <h2>Registration</h2>
+    <p class="dates">Register before {{ c.registration_deadline }}</p>
+  </a>
+  <a class="past-card" href="{{ '/hotel/' | relative_url }}">
+    <h2>Hotel</h2>
+    <p class="dates">Reserve before {{ c.hotel_deadline }}</p>
   </a>
 </div>
 
 <p>The conference will take place on the {{ c.venue_html }}.</p>
 
-<p>We expect all participants to attend the three days of the conference. If you plan to attend, please <a href="{{ '/registration/' | relative_url }}">register before {{ c.registration_deadline }}</a>.</p>
-
-<p><a href="{{ '/hotel/' | relative_url }}">Reserve your room before {{ c.hotel_deadline }}</a>.</p>
+<p>We expect all participants to attend the three days of the conference.</p>
 
 {% endif %}
 

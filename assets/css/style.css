@@ -223,10 +223,8 @@ ul.topics-list li { break-inside: avoid; }
   line-height: 1.4;
 }
 
-/* Standalone Program card on the home page (active state) */
-.program-card {
-  display: block;
-  max-width: 360px;
+/* Action cards on the home page (active state) — Program, Registration, Hotel */
+.action-cards {
   margin: 1.5rem 0;
 }
 

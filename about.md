@@ -6,7 +6,7 @@ permalink: /about/
 
 # About
 
-<p>The Summer Workshop in Macroeconomic Theory was started by Larry Jones and Nancy Stokey, and began at Northwestern University, where the J.&nbsp;L. Kellogg Graduate School of Management hosted it (almost) annually from 1987 to 1999, with NSF funding beginning in 1990. In 2000 the Summer Workshop moved to Minneapolis, and in each of the subsequent years (except for a break during 2020) it has met at the University of Minnesota under the joint sponsorship of the University and the Federal Reserve Bank of Minneapolis.</p>
+<p>The Summer Workshop in Macroeconomic Theory is an annual research conference dedicated to frontier work in dynamic macroeconomics. It was founded in 1987 by Larry Jones and Nancy Stokey at Northwestern University, where the Kellogg Graduate School of Management hosted it (almost) annually through 1999. The workshop moved to Minneapolis in 2000, where for more than two decades it has been held at the University of Minnesota under the joint sponsorship of the university and the Federal Reserve Bank of Minneapolis, with past support from the National Science Foundation. The workshop brings together scholars to present new research and exchange ideas through substantive interactions and discussion.</p>
 
 <div class="founders">
   <figure>

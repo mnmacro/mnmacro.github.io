@@ -34,8 +34,8 @@ a:hover { text-decoration: underline; }
 
 /* Header */
 .site-header {
-  background: #fff;
-  color: var(--ink);
+  background: var(--maroon);
+  color: #fff;
   padding: 1rem 0;
   border-bottom: 3px solid var(--gold);
   position: sticky;
@@ -46,13 +46,31 @@ a:hover { text-decoration: underline; }
 .site-header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
+.site-logo-link {
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
+.site-logo {
+  width: 180px;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.site-identity {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  min-width: 0;
+}
+
 .site-title {
-  color: var(--maroon);
+  color: var(--gold);
   font-family: var(--font-sans);
   font-size: 1.6rem;
   font-weight: 700;
@@ -73,7 +91,7 @@ a:hover { text-decoration: underline; }
 }
 
 .site-nav a {
-  color: var(--maroon);
+  color: #fff;
   font-family: var(--font-sans);
   font-size: 0.95rem;
 }
@@ -97,6 +115,7 @@ h2 {
   font-size: 1.4rem;
   margin-top: 2rem;
   margin-bottom: 0.5rem;
+  color: var(--maroon);
   border-bottom: 1px solid var(--rule);
   padding-bottom: 0.25rem;
 }
@@ -105,6 +124,7 @@ h3 {
   font-size: 1.1rem;
   margin-top: 1.5rem;
   margin-bottom: 0.25rem;
+  color: var(--maroon);
 }
 
 p { margin: 0.75rem 0; }
@@ -116,6 +136,7 @@ ul li { margin-bottom: 0.35rem; }
   font-size: 1.1rem;
   color: var(--muted);
 }
+
 
 .callout {
   background: #faf6ed;

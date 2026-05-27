@@ -10,7 +10,7 @@
   {%- endif -%}
   {%- assign page_desc = page.description | default: site.description -%}
   {%- assign abs_url = site.url | append: page.url -%}
-  {%- assign og_image = site.url | append: '/og-image.svg' -%}
+  {%- assign og_image = site.url | append: '/og-image.png' -%}
   <title>{{ full_title }}</title>
   <meta name="description" content="{{ page_desc | xml_escape }}">
 
@@ -36,8 +36,10 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
-      {% include nav.html %}
+      <div class="site-identity">
+        <a class="site-title" href="{{ '/' | relative_url }}">{{ site.title }}</a>
+        {% include nav.html %}
+      </div>
     </div>
   </header>
 

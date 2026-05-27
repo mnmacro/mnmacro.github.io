@@ -12,7 +12,7 @@ permalink: /hotel/
 1500 Washington Avenue South<br>
 Minneapolis, MN 55454</p>
 
-<p>The hotel is a short walk (about 5 minutes) from Hanson Hall, on the West Bank of the University of Minnesota's Twin Cities campus.</p>
+<p>The hotel is a short walk (about 10 minutes) from Hanson Hall, on the West Bank of the University of Minnesota's Twin Cities campus.</p>
 
 <h2>How to book</h2>
 

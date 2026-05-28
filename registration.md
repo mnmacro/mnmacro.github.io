@@ -10,11 +10,11 @@ permalink: /registration/
 
 <div class="past-cards action-cards">
   <a class="past-card" href="https://docs.google.com/forms/d/e/1FAIpQLSfcdt1tpqM8qQOZ1KqLMLNmRpsjz68otAzHae0qpnvclq-Isw/viewform?usp=publish-editor">
-    <h2>Economists</h2>
-    <p class="dates">For researchers and presenters</p>
+    <h2>All attendees</h2>
+    <p class="dates">Faculty, researchers, and non-UMN students</p>
   </a>
   <a class="past-card" href="https://docs.google.com/forms/d/e/1FAIpQLSeOkDxbo-02h3OvKCtgpCu7vivYZ1vU8N0DtdziJ5k9RpFnyQ/viewform?usp=publish-editor">
     <h2>UMN students</h2>
-    <p class="dates">For University of Minnesota students</p>
+    <p class="dates">Current University of Minnesota students</p>
   </a>
 </div>

@@ -160,7 +160,7 @@ permalink: /program/
       </tr>
       <tr>
         <td class="time-col">5:30 PM</td>
-        <td>Reception</td>
+        <td>Reception at Hanson Hall</td>
         <td></td>
       </tr>
     </tbody>

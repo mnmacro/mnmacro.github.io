@@ -8,11 +8,11 @@ permalink: /hotel/
 
 <p>The conference block is at:</p>
 
-<p><strong>Courtyard by Marriott Minneapolis Downtown</strong><br>
+<p><strong><a href="https://www.google.com/maps/search/?api=1&query=Courtyard%20by%20Marriott%20Minneapolis%20Downtown%2C%201500%20Washington%20Avenue%20South%2C%20Minneapolis%2C%20MN%2055454">Courtyard by Marriott Minneapolis Downtown</a></strong><br>
 1500 Washington Avenue South<br>
 Minneapolis, MN 55454</p>
 
-<p>The hotel is a short walk (about 10 minutes) from Hanson Hall, on the West Bank of the University of Minnesota's Twin Cities campus.</p>
+<p>The hotel is a short walk (about 10 minutes) from Hanson Hall, the conference venue.</p>
 
 <h2>How to book</h2>
 
